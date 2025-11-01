@@ -3,8 +3,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Zahari Tzigularov – Frontend Developer",
-  description: "Frontend developer in Denver building fast, reliable web interfaces.",
+  title: "Zahari Tzigularov - Full Stack Web Developer",
+    description: "Full stack web developer in Denver building fast, reliable websites and interfaces for small businesses.",
+    icons: {
+        icon: "/favicon.png",     // <-- the SVG you just created in /public
+        shortcut: "/favicon.png",    // <-- optional, from earlier
+    },
+    
 };
 
 export default function RootLayout({
