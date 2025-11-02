@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Section from "@/components/section";
+import Section from "@/components/Section"; 
 import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
 
@@ -77,15 +77,15 @@ export default function Home() {
                         after:h-[1px] after:w-0 after:bg-emerald-700 after:transition-all after:duration-200
                         hover:after:w-full"
                     >
-                    Projects
+                    Portfolio
                     </a>
                     <a
-                    href="#experience"
+                    href="#about"
                     className="relative pb-1 hover:text-emerald-700 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
                         after:h-[1px] after:w-0 after:bg-emerald-700 after:transition-all after:duration-200
                         hover:after:w-full"
                     >
-                    Experience
+                    About
                     </a>
                     <a
                     href="#contact"
@@ -93,7 +93,7 @@ export default function Home() {
                         after:h-[1px] after:w-0 after:bg-emerald-700 after:transition-all after:duration-200
                         hover:after:w-full"
                     >
-                    Contact
+                    Contact / Free Consultation
                     </a>
                 </nav>
 
@@ -110,8 +110,8 @@ export default function Home() {
                         <a href="#projects" onClick={() => setOpen(false)} className="py-2 border-b border-slate-100">
                             Projects
                         </a>
-                        <a href="#experience" onClick={() => setOpen(false)} className="py-2 border-b border-slate-100">
-                            Experience
+                        <a href="#about" onClick={() => setOpen(false)} className="py-2 border-b border-slate-100">
+                            About
                         </a>
                         <a href="#contact" onClick={() => setOpen(false)} className="py-2">
                             Contact
@@ -128,10 +128,10 @@ export default function Home() {
             {/* Hero */}
             <Section>
             <p className="text-xs uppercase tracking-[0.25em] font-bold text-emerald-700">
-                Full-Stack Developer • Denver
+                Small Business Web Developer • Denver, CO
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
-                I build fast, reliable websites and interfaces.
+                Specializing in building fast, reliable websites and interfaces for small businesses.
             </h1>
             <p className="mt-5 max-w-2xl text-slate-700 leading-relaxed">
                 19+ years building production sites in PHP, JavaScript, React, and modern tooling.
@@ -142,7 +142,7 @@ export default function Home() {
                 href="#projects"
                 className="bg-emerald-700 border-1 border-emerald-700 text-white px-6 py-2 rounded-md font-medium transition duration-200 hover:scale-[1.01] hover:shadow-sm hover:shadow-slate-700/30"
                 >
-                View Projects
+                View Portfolio
                 </a>
                 <a
                 href="#contact"
@@ -154,7 +154,7 @@ export default function Home() {
             </Section>
 
             {/* Projects */}
-            <Section id="projects" title="Selected Projects">
+            <Section id="projects" title="Project Highlights">
             <div className="grid md:grid-cols-3 gap-6">
                 <ProjectCard 
                     title="Multi-Site Platform (BluDomain)" 
@@ -192,9 +192,10 @@ export default function Home() {
                 />
 
                 <ProjectCard 
-                    title="Bank Reconciliation Automation (Walmart HQ)" 
-                    desc="Automated financial ops to improve accuracy and reduce manual effort."
-                    tech="Custom Accounting Software"
+                    title="Example Live Client Site" 
+                    desc="Small business client site generated with LAUNCHED."
+                    tech="PHP · MySQL · JS · jQuery · React · OpenAI · Payment APIs · Social Auth APIs" 
+                    href="https://magicepoxyworld.com/"
                 />
             
 
@@ -203,33 +204,24 @@ export default function Home() {
             </Section>
 
             {/* Experience */}
-            <Section id="experience" title="Experience">
+            <Section id="about" title="About Me">
             <div className="space-y-6">
-                <div>
-                <h3 className="font-semibold">
-                    Web Programmer - BluDomain <span className="text-slate-700 text-base">(2004 – Present)</span>
-                </h3>
+               
+                
                 <p className="text-slate-700 mt-1">
-                    Built and maintained production sites using PHP, MySQL, JS, jQuery, React.js, Node.js, HTML/CSS.
-                    Delivered full solutions for clients and improved performance/SEO.
+                    I am a web developer specializing in websites and SEO for small businesses and creatives.  I have nearly two decades of experience building responsive, production-ready web applications.  So, whether you're just getting started or need to upgrade your online presence, I can help.
                 </p>
-                </div>
-                <div>
-                <h3 className="font-semibold">
-                    Automatic Reconciliation Team Lead - Walmart HQ
-                </h3>
-                <p className="text-slate-700 mt-1">
-                    Lead a team of four accountants and worked closely with IT department to implement a new automated system for bank reconciliation, enhancing efficiency and accuracy in HQ financial operations.
+                 <p className="text-slate-700 mt-1">
+                    I specialize in HTML, CSS, PHP, MySQL, jQuery, JavaScript, React.js, Next.js, OpenAI integration, and latest SEO standards — and I offer free consultations and full project management.
                 </p>
-                </div>
+               
             </div>
             </Section>
 
             {/* Tech / Learning */}
-            <Section title="Current Focus">
+            <Section title="Free Consultations">
             <p className="text-slate-700">
-                Actively exploring Next.js App Router, server actions, AI/LLM integrations, Payload Headless CMS, and better DX for
-                multi-tenant sites. Comfortable integrating REST/JSON APIs and collaborating with design/backend teams.
+                I offer <span className="font-semibold">free consultations</span> — by phone or in person — to talk through your website or frontend project, review what you already have, and provide suggestions. No obligation, just straight answers and a clear next step.
             </p>
             </Section>
 
@@ -238,7 +230,7 @@ export default function Home() {
             <p className="text-slate-700 mb-2">
                 Email:{" "}
                 <a href="mailto:tzigularov@gmail.com" className="text-emerald-700 hover:text-emerald-900">
-                tzigularov@gmail.com
+                zcowebservices@gmail.com
                 </a>
             </p>
             <p className="text-slate-700 mb-2">
@@ -247,16 +239,7 @@ export default function Home() {
                 1-303-718-2293
                 </a>
             </p>
-            <p className="text-slate-700 mb-2">
-                LinkedIn:{" "}
-                <a
-                href="https://www.linkedin.com/in/zahari-tzigularov/"
-                className="text-emerald-700 hover:text-emerald-900"
-                >
-                /in/zahari-tzigularov/
-                </a>
-            </p>
-            <p className="text-slate-700">Denver / Indian Hills, CO • Open to full-time or project work.</p>
+            <p className="text-slate-700">Denver / Indian Hills, CO • Currently taking on new projects.</p>
             </Section>
         </main>
         </>

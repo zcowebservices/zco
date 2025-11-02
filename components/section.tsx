@@ -10,7 +10,7 @@ interface SectionProps {
 export default function Section({ id, title, children }: SectionProps) {
   return (
     <section id={id} className="space-y-4">
-      {title ? <h2 className="text-2xl font-semibold">{title}</h2> : null}
+      {title ? <h2 className="text-3xl font-semibold">{title}</h2> : null}
       <div>{children}</div>
     </section>
   );
