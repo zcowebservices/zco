@@ -131,11 +131,11 @@ export default function Home() {
                 Small Business Web Developer • Denver, CO
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
-                Specializing in building fast, reliable websites and interfaces for small businesses.
+                Building fast, reliable websites and interfaces for small businesses.
             </h1>
             <p className="mt-5 max-w-2xl text-slate-700 leading-relaxed">
-                19+ years building production sites in PHP, JavaScript, React, and modern tooling.
-                Currently working with Next.js, AI/LLM APIs, and cloud deployments to speed up content workflows.
+                19+ years building production sites in PHP, MySQL, JavaScript, React, CSS/HTML, and more.
+                Currently exploring and implementing modern tooling, such as Next.js, AI APIs, and cloud deployments to speed up content workflows.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
                 <a
@@ -154,7 +154,7 @@ export default function Home() {
             </Section>
 
             {/* Projects */}
-            <Section id="projects" title="Project Highlights">
+            <Section id="projects" title="Portfolio Highlights">
             <div className="grid md:grid-cols-3 gap-6">
                 <ProjectCard 
                     title="Multi-Site Platform (BluDomain)" 
