@@ -11,7 +11,7 @@ type ProjectCardProps = {
 export default function  ProjectCard({title, desc, tech, href}:ProjectCardProps){
     const hasLink = Boolean(href);
     return (
-        <article className={`relative bg-slate-700/50 p-5 ${hasLink ? "pb-14" : ""} rounded-xl border border-slate-700 cursor-pointer ease-out transition duration-200 hover:scale-[1.01] hover:shadow-md hover:shadow-slate-900/30`}>
+        <article className={`relative bg-[var(--background)]/50 p-5 ${hasLink ? "pb-14" : ""} rounded-xl border border-slate-900/10 cursor-pointer ease-out transition duration-200 hover:scale-[1.01] hover:shadow-md hover:shadow-slate-900/30`}>
             <div>
                 <h3 className="font-semibold text-lg">{title}</h3>
                 <p className="text-base mt-2">{desc}</p>
@@ -21,7 +21,7 @@ export default function  ProjectCard({title, desc, tech, href}:ProjectCardProps)
             {hasLink ? (
             <Link
                 href={href!} target="_blank"
-                className="absolute bottom-4 right-4 inline-flex items-center gap-1 text-sm text-slate-700 hover:text-emerald-700 bg-white rounded-lg px-2 py-1"
+                className="absolute bottom-4 right-4 inline-flex items-center gap-1 text-sm hover:text-[var(--accent)] bg-[var(--background)] rounded-lg px-2 py-1"
                 >
                 <span>View</span>
                 <svg

@@ -41,10 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth " >
-      <body className="text-slate-700 antialiased  bg-[linear-gradient(135deg,rgba(51,65,85,1),rgba(51,65,85,.7)),url('/abstract-bg.jpg')] bg-cover bg-center bg-fixed">
+    <html lang="en" className="scroll-smooth">
+      <body className="text-[var(--foreground)] antialiased bg-[linear-gradient(135deg,var(--background-30),var(--background-70)),url('/abstract-bg.jpg')] bg-cover bg-center bg-fixed">
         {children}
-      </body>
+    </body>
     </html>
   );
 }

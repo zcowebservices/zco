@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Section from "@/components/SectionElem"; 
 import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
     const [open, setOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Home() {
     return (
         <>
             {/* Header */}
-            <header className={`sticky top-0 z-50 bg-black/50 backdrop-blur-md transition-all ${scrolled ? "shadow-sm border-slate-200" : ""}`}>
+            <header className={`sticky top-0 z-50 bg-[var(--header-bg)]/50 backdrop-blur-md transition-all ${scrolled ? "shadow-sm border-slate-200" : ""}`}>
             <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
                 {/* Logo / name */}
                 <Link
@@ -42,10 +43,42 @@ export default function Home() {
                     </span>
                 </Link>
 
+                
+
+                
+                {/* Desktop nav */}
+                <nav className="hidden md:flex gap-6 text-base">
+                    <a
+                    href="#projects"
+                    className="relative pb-1 hover:text-[var(--accent)] transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
+                        after:h-[1px] after:w-0 after:bg-[var(--accent)] after:transition-all after:duration-200
+                        hover:after:w-full"
+                    >
+                    Portfolio
+                    </a>
+                    <a
+                    href="#about"
+                    className="relative pb-1 hover:text-[var(--accent)] transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
+                        after:h-[1px] after:w-0 after:bg-[var(--accent)] after:transition-all after:duration-200
+                        hover:after:w-full"
+                    >
+                    About
+                    </a>
+                    <a
+                    href="#contact"
+                    className="relative pb-1 hover:text-[var(--accent)] transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
+                        after:h-[1px] after:w-0 after:bg-[var(--accent)] after:transition-all after:duration-200
+                        hover:after:w-full"
+                    >
+                    Contact / Free Consultation
+                    </a>
+                </nav>
+
+                <ThemeToggle />
                 {/* Mobile menu button */}
                 <button
                     onClick={() => setOpen((p) => !p)}
-                    className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-500 text-slate-200"
+                    className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-[var(--foreground)]/10"
                     aria-label="Toggle navigation"
                 >
                     <span className="sr-only">Open menu</span>
@@ -68,35 +101,6 @@ export default function Home() {
                     </svg>
                 </button>
 
-                
-                {/* Desktop nav */}
-                <nav className="hidden md:flex gap-6 text-base">
-                    <a
-                    href="#projects"
-                    className="relative pb-1 hover:text-emerald-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
-                        after:h-[1px] after:w-0 after:bg-emerald-400 after:transition-all after:duration-200
-                        hover:after:w-full"
-                    >
-                    Portfolio
-                    </a>
-                    <a
-                    href="#about"
-                    className="relative pb-1 hover:text-emerald-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
-                        after:h-[1px] after:w-0 after:bg-emerald-400 after:transition-all after:duration-200
-                        hover:after:w-full"
-                    >
-                    About
-                    </a>
-                    <a
-                    href="#contact"
-                    className="relative pb-1 hover:text-emerald-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
-                        after:h-[1px] after:w-0 after:bg-emerald-400 after:transition-all after:duration-200
-                        hover:after:w-full"
-                    >
-                    Contact / Free Consultation
-                    </a>
-                </nav>
-
                 {/* Mobile nav panel */}
                 <div
                     className={`
@@ -105,12 +109,12 @@ export default function Home() {
                         ${open ? "opacity-100" : "opacity-0 pointer-events-none"}
                     `}
                     >
-                    <div className="bg-slate-700/98 backdrop-blur border border-slate-700 rounded-md shadow-md">
+                    <div className="bg-[var(--background)]/98 backdrop-blur border border-[var(--foreground)]/10 rounded-md shadow-md">
                         <nav className="flex flex-col px-4 py-3 gap-2">
-                        <a href="#projects" onClick={() => setOpen(false)} className="py-2 border-b border-white/10">
+                        <a href="#projects" onClick={() => setOpen(false)} className="py-2 border-b border-[var(--foreground)]/10">
                             Projects
                         </a>
-                        <a href="#about" onClick={() => setOpen(false)} className="py-2 border-b border-white/10">
+                        <a href="#about" onClick={() => setOpen(false)} className="py-2 border-b border-[var(--foreground)]/10">
                             About
                         </a>
                         <a href="#contact" onClick={() => setOpen(false)} className="py-2">
@@ -127,7 +131,7 @@ export default function Home() {
         <main className=" max-w-5xl mx-auto mt-6 px-4 space-y-16 pb-16">
             {/* Hero */}
             <Section>
-            <p className="text-xs uppercase tracking-[0.25em] font-bold text-emerald-400">
+            <p className="text-xs uppercase tracking-[0.25em] font-bold text-[var(--accent)]">
                 Small Business Web Developer • Denver, CO
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
@@ -140,7 +144,7 @@ export default function Home() {
             <div className="mt-6 flex flex-wrap gap-4">
                 <a
                 href="#projects"
-                className="bg-emerald-400 border-1 border-emerald-400 text-slate-900 px-6 py-2 rounded-md font-medium transition duration-200 hover:scale-[1.05] hover:shadow-md hover:shadow-slate-900/30"
+                className="bg-[var(--accent)] border-1 border-[var(--accent)] text-[var(--background)] px-6 py-2 rounded-md font-medium transition duration-200 hover:scale-[1.05] hover:shadow-md hover:shadow-slate-900/30"
                 >
                 View Portfolio
                 </a>
@@ -229,13 +233,13 @@ export default function Home() {
             <Section id="contact" title="Contact">
             <p className="mb-2">
                 Email:{" "}
-                <a href="mailto:tzigularov@gmail.com" className="text-emerald-400 hover:text-emerald-300">
+                <a href="mailto:tzigularov@gmail.com" className="text-[var(--accent)] hover:text-[var(--accent)]/70">
                 zcowebservices@gmail.com
                 </a>
             </p>
             <p className="mb-2">
                 Phone / SMS:{" "}
-                <a href="tel:13037182293" className="text-emerald-400 hover:text-emerald-300">
+                <a href="tel:13037182293" className="text-[var(--accent)] hover:text-[var(--accent)]/70">
                 1-303-718-2293
                 </a>
             </p>
