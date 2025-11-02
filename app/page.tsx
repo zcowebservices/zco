@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <>
             {/* Header */}
-            <header className={`sticky top-0 z-50 bg-white/70 backdrop-blur-md transition-all ${scrolled ? "shadow-sm border-slate-200" : ""}`}>
+            <header className={`sticky top-0 z-50 bg-black/50 backdrop-blur-md transition-all ${scrolled ? "shadow-sm border-slate-200" : ""}`}>
             <div className="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
                 {/* Logo / name */}
                 <Link
@@ -37,7 +37,7 @@ export default function Home() {
                     height={80} 
                     sizes="(min-width: 768px) 80px, 56px"
                     />
-                    <span className="text-lg font-semibold tracking-tight md:text-xl">
+                    <span className="text-lg  font-semibold tracking-tight md:text-xl">
                     Zahari Tzigularov
                     </span>
                 </Link>
@@ -45,7 +45,7 @@ export default function Home() {
                 {/* Mobile menu button */}
                 <button
                     onClick={() => setOpen((p) => !p)}
-                    className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-200 text-slate-700"
+                    className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-slate-500 text-slate-200"
                     aria-label="Toggle navigation"
                 >
                     <span className="sr-only">Open menu</span>
@@ -70,27 +70,27 @@ export default function Home() {
 
                 
                 {/* Desktop nav */}
-                <nav className="hidden md:flex gap-6 text-base text-slate-600">
+                <nav className="hidden md:flex gap-6 text-base">
                     <a
                     href="#projects"
-                    className="relative pb-1 hover:text-emerald-700 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
-                        after:h-[1px] after:w-0 after:bg-emerald-700 after:transition-all after:duration-200
+                    className="relative pb-1 hover:text-emerald-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
+                        after:h-[1px] after:w-0 after:bg-emerald-400 after:transition-all after:duration-200
                         hover:after:w-full"
                     >
                     Portfolio
                     </a>
                     <a
                     href="#about"
-                    className="relative pb-1 hover:text-emerald-700 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
-                        after:h-[1px] after:w-0 after:bg-emerald-700 after:transition-all after:duration-200
+                    className="relative pb-1 hover:text-emerald-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
+                        after:h-[1px] after:w-0 after:bg-emerald-400 after:transition-all after:duration-200
                         hover:after:w-full"
                     >
                     About
                     </a>
                     <a
                     href="#contact"
-                    className="relative pb-1 hover:text-emerald-700 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
-                        after:h-[1px] after:w-0 after:bg-emerald-700 after:transition-all after:duration-200
+                    className="relative pb-1 hover:text-emerald-400 transition after:content-[''] after:absolute after:left-0 after:-bottom-0.5
+                        after:h-[1px] after:w-0 after:bg-emerald-400 after:transition-all after:duration-200
                         hover:after:w-full"
                     >
                     Contact / Free Consultation
@@ -105,12 +105,12 @@ export default function Home() {
                         ${open ? "opacity-100" : "opacity-0 pointer-events-none"}
                     `}
                     >
-                    <div className="bg-white/95 backdrop-blur border border-slate-200 rounded-md shadow-md">
-                        <nav className="flex flex-col px-4 py-3 gap-2 text-slate-700">
-                        <a href="#projects" onClick={() => setOpen(false)} className="py-2 border-b border-slate-100">
+                    <div className="bg-slate-700/98 backdrop-blur border border-slate-700 rounded-md shadow-md">
+                        <nav className="flex flex-col px-4 py-3 gap-2">
+                        <a href="#projects" onClick={() => setOpen(false)} className="py-2 border-b border-white/10">
                             Projects
                         </a>
-                        <a href="#about" onClick={() => setOpen(false)} className="py-2 border-b border-slate-100">
+                        <a href="#about" onClick={() => setOpen(false)} className="py-2 border-b border-white/10">
                             About
                         </a>
                         <a href="#contact" onClick={() => setOpen(false)} className="py-2">
@@ -124,29 +124,29 @@ export default function Home() {
 
             </header>
 
-        <main className="max-w-5xl mx-auto mt-2 px-4 space-y-16 pb-16">
+        <main className=" max-w-5xl mx-auto mt-6 px-4 space-y-16 pb-16">
             {/* Hero */}
             <Section>
-            <p className="text-xs uppercase tracking-[0.25em] font-bold text-emerald-700">
+            <p className="text-xs uppercase tracking-[0.25em] font-bold text-emerald-400">
                 Small Business Web Developer • Denver, CO
             </p>
             <h1 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
                 Building fast, reliable websites and interfaces for small businesses.
             </h1>
-            <p className="mt-5 max-w-2xl text-slate-700 leading-relaxed">
+            <p className="mt-5 max-w-2xl leading-relaxed">
                 19+ years building production sites in PHP, MySQL, JavaScript, React, CSS/HTML, and more.
                 Currently exploring and implementing modern tooling, such as Next.js, AI APIs, and cloud deployments to speed up content workflows.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
                 <a
                 href="#projects"
-                className="bg-emerald-700 border-1 border-emerald-700 text-white px-6 py-2 rounded-md font-medium transition duration-200 hover:scale-[1.01] hover:shadow-sm hover:shadow-slate-700/30"
+                className="bg-emerald-400 border-1 border-emerald-400 text-slate-900 px-6 py-2 rounded-md font-medium transition duration-200 hover:scale-[1.05] hover:shadow-md hover:shadow-slate-900/30"
                 >
                 View Portfolio
                 </a>
                 <a
                 href="#contact"
-                className="border border-slate-500 px-6 py-2 rounded-md font-medium transition duration-200 hover:scale-[1.01] hover:shadow-sm hover:shadow-slate-700/30"
+                className="border border-slate-500 px-6 py-2 rounded-md font-medium transition duration-200 hover:scale-[1.05] hover:shadow-md hover:shadow-slate-900/30"
                 >
                 Contact
                 </a>
@@ -208,10 +208,10 @@ export default function Home() {
             <div className="space-y-6">
                
                 
-                <p className="text-slate-700 mt-1">
+                <p className=" mt-1">
                     I am a web developer specializing in websites and SEO for small businesses and creatives.  I have nearly two decades of experience building responsive, production-ready web applications.  So, whether you're just getting started or need to upgrade your online presence, I can help.
                 </p>
-                 <p className="text-slate-700 mt-1">
+                 <p className=" mt-1">
                     I specialize in HTML, CSS, PHP, MySQL, jQuery, JavaScript, React.js, Next.js, OpenAI integration, and latest SEO standards — and I offer free consultations and full project management.
                 </p>
                
@@ -220,26 +220,26 @@ export default function Home() {
 
             {/* Tech / Learning */}
             <Section title="Free Consultations">
-            <p className="text-slate-700">
+            <p>
                 I offer <span className="font-semibold">free consultations</span> — by phone or in person — to talk through your website or frontend project, review what you already have, and provide suggestions. No obligation, just straight answers and a clear next step.
             </p>
             </Section>
 
             {/* Contact */}
             <Section id="contact" title="Contact">
-            <p className="text-slate-700 mb-2">
+            <p className="mb-2">
                 Email:{" "}
-                <a href="mailto:tzigularov@gmail.com" className="text-emerald-700 hover:text-emerald-900">
+                <a href="mailto:tzigularov@gmail.com" className="text-emerald-400 hover:text-emerald-300">
                 zcowebservices@gmail.com
                 </a>
             </p>
-            <p className="text-slate-700 mb-2">
+            <p className="mb-2">
                 Phone / SMS:{" "}
-                <a href="tel:13037182293" className="text-emerald-700 hover:text-emerald-900">
+                <a href="tel:13037182293" className="text-emerald-400 hover:text-emerald-300">
                 1-303-718-2293
                 </a>
             </p>
-            <p className="text-slate-700">Denver / Indian Hills, CO • Currently taking on new projects.</p>
+            <p>Denver / Indian Hills, CO • Currently taking on new projects.</p>
             </Section>
         </main>
         </>

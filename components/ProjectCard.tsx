@@ -11,11 +11,11 @@ type ProjectCardProps = {
 export default function  ProjectCard({title, desc, tech, href}:ProjectCardProps){
     const hasLink = Boolean(href);
     return (
-        <article className={`relative bg-slate-200/50 p-5 ${hasLink ? "pb-14" : ""} rounded-xl border border-slate-900/50 cursor-pointer ease-out transition duration-200 hover:scale-[1.01] hover:shadow-sm hover:shadow-slate-900/30`}>
+        <article className={`relative bg-slate-700/50 p-5 ${hasLink ? "pb-14" : ""} rounded-xl border border-slate-900/50 cursor-pointer ease-out transition duration-200 hover:scale-[1.01] hover:shadow-md hover:shadow-slate-900/30`}>
             <div>
                 <h3 className="font-semibold text-lg">{title}</h3>
-                <p className="text-base mt-2 text-slate-700">{desc}</p>
-                {tech ? (<p className="text-xs mt-3 text-slate-500">{tech}</p>
+                <p className="text-base mt-2">{desc}</p>
+                {tech ? (<p className="text-xs mt-3">{tech}</p>
                 ) : null}
             </div>
             {hasLink ? (
