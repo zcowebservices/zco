@@ -9,6 +9,29 @@ export const metadata: Metadata = {
         icon: "/favicon.png",     // <-- the SVG you just created in /public
         shortcut: "/favicon.png",    // <-- optional, from earlier
     },
+    metadataBase: new URL("https://www.zcowebservices.com"), // <-- change this
+    openGraph: {
+        title: "Zahari Tzigularov - Small Business Web Developer",
+        description: "I build fast, modern sites using PHP, MySQL, JavaScript, Next.js, React.",
+        url: "https://www.zcowebservices.com",
+        siteName: "Zahari Tzigularov Portfolio",
+        images: [
+        {
+            url: "/zco_og.jpg",
+            width: 1200,
+            height: 675,
+            alt: "Zahari Tzigularov - Small Business Web Developer",
+        },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Zahari Tzigularov - Small Business Web Developer",
+        description: "PHP, MySQL, JavaScript, Next.js, React.",
+        images: ["/zco_og.jpg"],
+    },
     
 };
 
