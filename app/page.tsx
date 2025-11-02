@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Section from "@/components/Section"; 
+import Section from "@/components/SectionElem"; 
 import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
 

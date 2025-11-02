@@ -7,7 +7,7 @@ interface SectionProps {
   children: ReactNode;
 }
 
-export default function Section({ id, title, children }: SectionProps) {
+export default function SectionElem({ id, title, children }: SectionProps) {
   return (
     <section id={id} className="space-y-4">
       {title ? <h2 className="text-3xl font-semibold">{title}</h2> : null}
