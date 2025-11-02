@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Zahari Tzigularov - Small Business Web Developer",
         description: "PHP, MySQL, JavaScript, Next.js, React.",
-        images: ["/zco_og.jpg"],
+        images: ["/og-zcowebservices.png"],
     },
     
 };
