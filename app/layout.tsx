@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         siteName: "Zahari Tzigularov Portfolio",
         images: [
         {
-            url: "/zco_og.jpg",
+            url: "/og-zcowebservices.png",
             width: 1200,
             height: 675,
             alt: "Zahari Tzigularov - Small Business Web Developer",
