@@ -238,10 +238,11 @@ export default function Home() {
                             upgrade your online presence, I can help.
                         </p>
                         <p className=" mt-1">
-                            I specialize in HTML, CSS, PHP, MySQL, jQuery,
-                            JavaScript, React.js, Next.js, OpenAI integration,
-                            and latest SEO standards — and I offer free
-                            consultations and full project management.
+                            I specialize in developing modern, resposive
+                            websites and apps with HTML, CSS, Next.js,
+                            PostgreSQL, PHP, MySQL, jQuery, JavaScript, AI
+                            integration, and latest SEO standards — and I offer
+                            free consultations and full project management.
                         </p>
                     </div>
                 </Section>
