@@ -3,25 +3,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Z Co Web Services | Zahari Tzigularov - Small Business Web Developer",
-    description: "Specializing in building fast, reliable websites and interfaces for small businesses",
+    title: "Z Co Web Services | Zahari Tzigularov - Small Business Web Developer",
+    description:
+        "Specializing in building fast, reliable websites and interfaces for small businesses",
     icons: {
-        icon: "/favicon.png",     // <-- the SVG you just created in /public
-        shortcut: "/favicon.png",    // <-- optional, from earlier
+        icon: "/favicon.png", // <-- the SVG you just created in /public
+        shortcut: "/favicon.png", // <-- optional, from earlier
     },
     metadataBase: new URL("https://www.zcowebservices.com"), // <-- change this
     openGraph: {
         title: "Zahari Tzigularov - Small Business Web Developer",
-        description: "I build fast, modern sites using PHP, MySQL, JavaScript, Next.js, React.",
+        description:
+            "I build fast, modern sites using PHP, MySQL, JavaScript, Next.js, React.",
         url: "https://www.zcowebservices.com",
         siteName: "Zahari Tzigularov Portfolio",
         images: [
-        {
-            url: "/og-zcowebservices.png",
-            width: 1200,
-            height: 675,
-            alt: "Zahari Tzigularov - Small Business Web Developer",
-        },
+            {
+                url: "/og-zcowebservices.png",
+                width: 1200,
+                height: 675,
+                alt: "Zahari Tzigularov - Small Business Web Developer",
+            },
         ],
         locale: "en_US",
         type: "website",
@@ -29,22 +31,21 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Zahari Tzigularov - Small Business Web Developer",
-        description: "PHP, MySQL, JavaScript, Next.js, React.",
+        description: "PHP, MySQL, PostgreSQL, JavaScript, Next.js, React.",
         images: ["/og-zcowebservices.png"],
     },
-    
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <body className="text-[var(--foreground)] antialiased bg-[linear-gradient(135deg,var(--background-30),var(--background-70)),url('/abstract-bg.jpg')] bg-cover bg-center bg-fixed">
-        {children}
-    </body>
-    </html>
-  );
+    return (
+        <html lang="en" className="scroll-smooth">
+            <body className="text-[var(--foreground)] antialiased bg-[linear-gradient(135deg,var(--background-30),var(--background-70)),url('/abstract-bg.jpg')] bg-cover bg-center bg-fixed">
+                {children}
+            </body>
+        </html>
+    );
 }

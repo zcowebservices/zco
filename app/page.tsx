@@ -70,7 +70,7 @@ export default function Home() {
                         </a>
                     </nav>
 
-                    <ThemeToggle />
+                    {/* <ThemeToggle /> */}
                     {/* Mobile menu button */}
                     <button
                         onClick={() => setOpen((p) => !p)}
