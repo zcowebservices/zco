@@ -141,15 +141,15 @@ export default function Home() {
                         Small Business Web Developer • Denver, CO
                     </p>
                     <h1 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
-                        Building fast, reliable websites and interfaces for
-                        small businesses.
+                        Building fast, reliable websites, web apps, and
+                        interfaces for small businesses.
                     </h1>
                     <p className="mt-5 max-w-2xl leading-relaxed">
-                        19+ years building production sites in PHP, MySQL,
+                        20+ years building production sites in PHP, MySQL,
                         JavaScript, React, CSS/HTML, and more. Currently
-                        exploring and implementing modern tooling, such as
-                        Next.js, PostgreSQL, Tailwind CSS, AI APIs, and cloud
-                        deployments to speed up content workflows.
+                        implementing modern tooling, such as Next.js,
+                        PostgreSQL, Tailwind CSS, AI APIs, and cloud deployments
+                        to speed up content workflows.
                     </p>
                     <div className="mt-6 flex flex-wrap gap-4">
                         <a
