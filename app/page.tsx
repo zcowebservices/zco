@@ -171,10 +171,10 @@ export default function Home() {
                 <Section id="projects" title="Portfolio Highlights">
                     <div className="grid md:grid-cols-3 gap-6">
                         <ProjectCard
-                            title="TubeJournal"
-                            desc="SaaS platform that transforms YouTube channels into SEO-optimized journal sites with AI-generated articles, custom domains, and private creator logs."
+                            title="The Fishing Journal"
+                            desc="Private fishing trip journal with AI-powered catch analysis — species ID and size estimation from photos — plus optional YouTube channel sync."
                             tech="Next.js · PostgreSQL · Prisma · Clerk · Stripe · Claude AI · Vercel"
-                            href="https://www.tubejournal.io"
+                            href="https://www.thefishingjournal.com"
                         />
                         <ProjectCard
                             title="Den Suites"
