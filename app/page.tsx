@@ -172,7 +172,7 @@ export default function Home() {
                     <div className="grid md:grid-cols-3 gap-6">
                         <ProjectCard
                             title="The Fishing Journal"
-                            desc="Private fishing trip journal with AI-powered catch analysis — species ID and size estimation from photos — plus optional YouTube channel sync."
+                            desc="Private fishing trip journal with AI-powered catch analysis — species ID and size estimation from photos — plus optional YouTube channel sync and a publishable public journal with custom domain support."
                             tech="Next.js · PostgreSQL · Prisma · Clerk · Stripe · Claude AI · Vercel"
                             href="https://www.thefishingjournal.com"
                         />
